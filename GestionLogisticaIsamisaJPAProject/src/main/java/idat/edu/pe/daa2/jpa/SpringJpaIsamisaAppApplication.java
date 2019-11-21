@@ -19,7 +19,7 @@ import idat.edu.pe.daa2.jpa.servicios.CiudadServicio;
 public class SpringJpaIsamisaAppApplication {
 	public static void main(String[] args) {
 	ConfigurableApplicationContext ctx = SpringApplication.run(SpringJpaIsamisaAppApplication.class, args);
-	//crearPais(ctx);
+	crearPais(ctx);
 	//crearDepartamento(ctx);
 	//crearCiudad(ctx);
 	//eliminarPais(ctx);
@@ -29,7 +29,7 @@ public class SpringJpaIsamisaAppApplication {
 	//actualizarDepartamento(ctx);
 	//actualizarCiudad(ctx);
 	//crearTipoPersona(ctx);
-	crearPersona(ctx);
+	//crearPersona(ctx);
 	
 	}
 /**
@@ -68,8 +68,8 @@ private static void crearDepartamento(ConfigurableApplicationContext ctx) {
 
 private static void crearPais(ConfigurableApplicationContext ctx){
 		PaisServicio servicio = ctx.getBean(PaisServicio.class);
-		Pais españa = new Pais("España");
-		servicio.crear(españa);
+		Pais colombia = new Pais("Colombia");
+		servicio.crear(colombia);
 	}
 
 private static void crearTipoPersona(ConfigurableApplicationContext ctx){
